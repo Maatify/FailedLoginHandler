@@ -13,7 +13,7 @@ namespace Maatify\FailedLoginHandler;
 
 use \App\Assist\AppFunctions;
 use \App\DB\DBS\DbConnector;
-use \App\DB\Tables\Admin\AdminLoginToken;
+use Maatify\Portal\Admin\AdminLoginToken;
 use Maatify\Functions\GeneralFunctions;
 use Maatify\Json\Json;
 
