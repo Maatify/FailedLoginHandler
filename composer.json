@@ -1,7 +1,7 @@
 {
   "name": "maatify/failed-login-handler",
   "description": "maatify.com",
-  "version": "1.0.2",
+  "version": "1.0.003",
   "type": "library",
   "keywords": [
     "PHP",

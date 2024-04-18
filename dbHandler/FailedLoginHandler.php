@@ -36,6 +36,19 @@ abstract class FailedLoginHandler extends DbConnector
         $this->IsFailedRecord();
     }
 
+    public function isFailedBool(string $ip = ''): bool
+    {
+        if(empty($ip)){
+            $ip = $this->ip;
+        }
+
+        $check = $this->IsFailed($ip);
+        if(!empty($check) && $check >= $this->tries){
+            return true;
+        }
+        return false;
+    }
+
     private function IsFailed(string $ip = ''): int
     {
         //        $time = date("Y-m-d H:i:s", strtotime('-1 days')); // -1 hours
